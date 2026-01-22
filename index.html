@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="BrandRise Digital - Premium digital experiences that blend strategy, performance, and design excellence">
+    <title>BrandRise Digital | Bold Digital Identity That Commands Attention</title>
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Load fonts with display swap for faster rendering -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="./brand logo.png" as="image">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="./brand logo.png" alt="BrandRise Digital Logo" class="brand-logo" width="100" height="auto" loading="eager">
+            </a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="#services" data-translate="services">Services</a>
+            <a href="#case-studies" data-translate="caseStudies">Case Studies</a>
+           <a href="#" onclick="openModal('about-modal'); return false;" data-translate="about">About</a>
+            <div class="language-switcher">
+                <button class="lang-btn" id="langBtn">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-text" data-translate="language">English</span>
+                    <span class="lang-arrow">▼</span>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="#" onclick="switchLanguage('en'); return false;">English</a>
+                    <a href="#" onclick="switchLanguage('hi'); return false;">हिंदी (Hindi)</a>
+                </div>
+            </div>
+            <a href="./contact.html" class="cta-button" data-translate="getStarted">Get Started</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-menu-backdrop"></div>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 data-translate="heroTitle">Build a Bold Digital Identity That Commands Attention</h1>
+            
+            <p data-translate="heroSubtitle1">Premium digital experiences that blend strategy, performance, and design excellence to help brands grow faster, look stronger, and connect deeper.</p>
+            
+            <p data-translate="heroSubtitle2">We don't just create digital assets — we build strong brands, lasting impressions, and long-term success.</p>
+            <a href="#contact" class="primary-cta" data-translate="heroCTA">Create Something Remarkable</a>
+            <div class="trust-bar">
+                <p data-translate="trustBar">Trusted for reliability, transparency, and consistent delivery of high-quality results.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section scroll-reveal">
+        <h2 data-translate="servicesTitle">Digital Solutions Built for Growth, Performance & Impact</h2>
+        <p class="section-subtitle" data-translate="servicesSubtitle">Every experience we create is designed with precision and purpose — combining modern aesthetics with intelligent functionality.</p>
+        
+        <div class="services-grid">
+            
+           <div class="service-card">
+               <a href="./seo.html">  <h3 data-translate="seoTitle">🔍 Search Engine Optimization</h3></a>
+                <p data-translate="seoDesc">Drive high-intent traffic with strategic SEO that builds instant trust and converts visitors into long-term customers.</p>
+            </div>
+            
+            <div class="service-card">
+                <a href="./instagram-handling.html"> <h3 data-translate="instaTitle">📸 Instagram Management</h3></a>
+                <p data-translate="instaDesc">Premium Instagram presence management focused on authentic engagement and building a community that connects with your brand.</p>
+            </div>
+            
+            <div class="service-card">
+              <a href="./smm.html"> <h3 data-translate="smmTitle">🖼️ Social Media Design</h3></a>
+                <p data-translate="smmDesc">Scroll-stopping visual content with clean layouts and smooth interactions that feel premium, powerful, and future-ready.</p>
+            </div>
+            
+            <div class="service-card">
+               <a href="./editing.html">  <h3 data-translate="videoTitle">🎥 Video Content Creation</h3></a>
+                <p data-translate="videoDesc">High-quality short-form video content designed to capture attention instantly and maximize reach across platforms.</p>
+            </div>
+            
+            <div class="service-card">
+                <a href="./paid-ads.html"> <h3 data-translate="adsTitle">📢 Paid Advertising</h3></a>
+                <p data-translate="adsDesc">Performance-focused ad campaigns that deliver real business impact with precision targeting and measurable ROI.</p>
+            </div>
+            
+            <div class="service-card">
+                <a href="./email-marketing.html"><h3 data-translate="emailTitle">📧 Email Marketing</h3></a>
+                <p data-translate="emailDesc">Automated sequences and personalized campaigns that nurture leads and build lasting customer relationships.</p>
+            </div>
+            
+            <div class="service-card">
+                <a href="./b2b-marketing.html"><h3 data-translate="b2bTitle">🤝 B2B Marketing</h3></a>
+                <p data-translate="b2bDesc">Strategic solutions designed to generate high-value business leads and accelerate growth in complex sales cycles.</p>
+            </div>
+            
+            <div class="service-card">
+                <a href="./consulting.html"><h3 data-translate="consultingTitle">⚙️ Strategic Consulting</h3></a>
+                <p data-translate="consultingDesc">Expert guidance driven by innovation and attention to detail to solve your toughest challenges and unlock growth.</p>
+            </div>
+
+        </div>
+        
+        <a href="#contact" class="secondary-cta" data-translate="servicesCTA">Let's Build Your Digital Future &rarr;</a>
+    </section>
+
+    <section id="case-studies" class="case-study-preview scroll-reveal">
+        <h2 data-translate="caseStudiesTitle">Real Business Impact. Measurable Results.</h2>
+        <p class="section-subtitle" data-translate="caseStudiesSubtitle">We focus on speed, scalability, security, and seamless user experience — delivering solutions that perform flawlessly.</p>
+        
+        <div class="case-study-summary">
+            <h3 data-translate="caseStudyTitle">Case Study: Fusion Fitness (Regional Gym Chain)</h3>
+            <p data-translate="caseStudyDesc">Fusion Fitness was struggling to convert high ad spend into actual sign-ups. Their brand lacked consistency online, costing them trust and conversions.</p>
+            
+            <div class="results-grid">
+                <div class="metric-box">
+                    <p class="result-number" data-translate="metric1">+210%</p>
+                    <p class="result-label" data-translate="metric1Label">Organic Leads</p>
+                </div>
+                <div class="metric-box">
+                    <p class="result-number" data-translate="metric2">-35%</p>
+                    <p class="result-label" data-translate="metric2Label">Cost Per Lead (CPL)</p>
+                </div>
+                <div class="metric-box">
+                    <p class="result-number" data-translate="metric3">78%</p>
+                    <p class="result-label" data-translate="metric3Label">Higher Engagement</p>
+                </div>
+            </div>
+            
+            <span class="client-name" data-translate="strategy">— Strategy combined SEO, SMM, and Paid Ads.</span>
+        </div>
+        
+        <a href="/case-studies.html" class="primary-cta" data-translate="viewMore">View More Success Stories</a>
+    </section>
+    
+    <footer id="contact" class="scroll-reveal">
+        <div class="footer-content">
+            <div class="contact-form-area">
+                <h3 data-translate="footerTitle">Ready to Elevate Your Brand?</h3>
+                <p class="footer-tagline" data-translate="footerTagline">Your vision, powered by our expertise — built for growth, performance, and impact.</p>
+                <form action="https://formspree.io/f/xdkjnrko" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" data-translate="namePlaceholder" required>
+                    <input type="email" name="email" placeholder="Business Email" data-translate="emailPlaceholder" required>
+                    <textarea name="message" placeholder="Tell us about your vision..." data-translate="messagePlaceholder" required></textarea>
+                    <button type="submit" class="primary-cta" data-translate="submitButton">Start the Conversation</button>
+                </form>
+            </div>
+            <div class="footer-info">
+                <p data-translate="copyright">&copy; 2025 BrandRise Digital. All rights reserved.</p>
+                </div>
+        </div>
+    </footer>
+<div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('about-modal');">&times;</span>
+            
+            <div class="modal-body">
+                <h2>Building Bold Digital Identities</h2>
+                
+                <div class="about-section">
+                    <h3>Our Philosophy</h3>
+                    <p>We craft premium-quality digital experiences with a focus on clarity, usability, and results. Our work is driven by innovation, attention to detail, and a commitment to building solutions that not only look exceptional but perform flawlessly across every device and platform.</p>
+                </div>
+                
+                <div class="about-section">
+                    <h3>Our Approach</h3>
+                    <p>From concept to execution, every project is designed with precision and purpose. We focus on speed, scalability, security, and seamless user experience — ensuring your digital presence stands out, builds instant trust, and converts visitors into long-term customers.</p>
+                    <ul>
+                        <li>Strategy blended with performance and design excellence</li>
+                        <li>Modern aesthetics combined with intelligent functionality</li>
+                        <li>Clean layouts, smooth interactions, fast-loading performance</li>
+                        <li>Business-focused design that feels premium and future-ready</li>
+                    </ul>
+                </div>
+                
+                <div class="about-section">
+                    <h3>Why Choose Us</h3>
+                    <p>Clients trust us for our reliability, transparency, and consistent delivery of high-quality results. We don't just create digital assets — we build strong brands, lasting impressions, and long-term success. Every experience we create helps brands grow faster, look stronger, and connect deeper with their audience.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Load JavaScript with defer for better performance -->
+    <script src="script.js" defer></script>
+    
+</body>
+</html>

@@ -1,1 +1,2 @@
-# Brand-Rise-Digital-Web2
+# BrandRise-Digital
+for digital marketing
